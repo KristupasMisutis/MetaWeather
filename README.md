@@ -25,11 +25,12 @@ https://wireframe.cc/LK6uOk
 GET location /api/location/search/?vilnius=(vilnius) 
 400 - {error: 'invalid location search'}
 
-POST location /api/location/479616/ for Vilnius location
-400 - {error: 'invalid woeid '}
+GET location /api/location/479616/ for Vilnius location by WOEID
+POST location /api/location/479616/ for Vilnius location by WOEID
+405 - {error: 'Method Not Allowed'}
 
-POST date /api/location/(woeid)/(date)/
-400 - {error: 'wrong date format'}
+GET date /api/location/(woeid)/(date)/
+
 
 404 - {error: 'page not found'}
 
