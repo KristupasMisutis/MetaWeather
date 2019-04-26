@@ -22,7 +22,15 @@
 - [ ] Vilnius city weather on the current date https://www.metaweather.com/api/location/44418/2013/4/27/
 https://wireframe.cc/LK6uOk
 
-GET /api/location/search/?vilnius=(vilnius) location search
-PUT 	/static/img/weather/X.svg icon display
-GET /api/location/479616/ for Vilnius location
-GET /api/location/(woeid)/(date)/ for date
+GET location /api/location/search/?vilnius=(vilnius) 
+400 - {error: 'invalid location search'}
+
+POST location /api/location/479616/ for Vilnius location
+400 - {error: 'invalid woeid '}
+
+POST date /api/location/(woeid)/(date)/
+400 - {error: 'wrong date format'}
+
+404 - {error: 'page not found'}
+
+500 - {error: 'server error'}
