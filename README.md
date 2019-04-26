@@ -27,6 +27,7 @@ GET location /api/location/search/?vilnius=(vilnius)
 
 GET location /api/location/479616/ for Vilnius location by WOEID
 POST location /api/location/479616/ for Vilnius location by WOEID
+
 405 - {error: 'Method Not Allowed'}
 
 GET date /api/location/(woeid)/(date)/
