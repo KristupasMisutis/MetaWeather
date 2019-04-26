@@ -6,32 +6,21 @@
 
 ## Entity definition
 - [ ] parent
-    - [ ] title
-    - [ ] location_type
-    - [ ] latt_long
-    - [ ] time	
-    - [ ] sun_(rise|set)
-    - [ ] timezone_name
+    - [ ] title (string(lenght=60))
+    - [ ] location_type (string(lenght=20))
 - [ ] consolidated_weather
-    - [ ] id
-    - [ ] applicable_date
-    - [ ] weather_state_name
-    - [ ] weather_state_abbr
-    - [ ] wind_speed
-    - [ ] wind_direction
-    - [ ] wind_direction_compass
-    - [ ] (min|max|the)_temp
-    - [ ] air_pressure
-    - [ ] humidity
-    - [ ] visibility
-    - [ ] predictability
-    
+    - [ ] id (integer(lenght=10000))
+    - [ ] applicable_date (date)
+    - [ ] weather_state_name (string(lenght=22))
+    - [ ] wind_speed (float(lenght=1000000)
+    - [ ] (min|max|the)_temp (integer(lenght=100000))
 - [ ] sources
-    - [ ] title
-    - [ ] url
+    - [ ] title (string(lenght=100000)
+    - [ ] url (string(lenght=100000)
 
 ## API definition
 - [ ] Vilnius city weather on the current date https://www.metaweather.com/api/location/44418/2013/4/27/
+https://wireframe.cc/LK6uOk
 
 GET /api/location/search/?vilnius=(vilnius) location search
 PUT 	/static/img/weather/X.svg icon display
