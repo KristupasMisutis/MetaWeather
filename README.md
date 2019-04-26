@@ -26,6 +26,7 @@ GET location /api/location/search/?vilnius=(vilnius)
 400 - {error: 'invalid location search'}
 
 GET location /api/location/479616/ for Vilnius location by WOEID
+
 POST location /api/location/479616/ for Vilnius location by WOEID
 
 405 - {error: 'Method Not Allowed'}
