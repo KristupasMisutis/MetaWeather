@@ -35,5 +35,5 @@
 
 GET /api/location/search/?vilnius=(vilnius) location search
 PUT 	/static/img/weather/X.svg icon display
-GET /api/location/2487956/ for location
+GET /api/location/479616/ for Vilnius location
 GET /api/location/(woeid)/(date)/ for date
