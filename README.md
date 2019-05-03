@@ -13,10 +13,10 @@
     - [ ] applicable_date (date)
     - [ ] weather_state_name (string(lenght=22))
     - [ ] wind_speed (float(lenght=1000000)
-    - [ ] (min|max|the)_temp (integer(lenght=100000))
+    
 - [ ] sources
     - [ ] title (string(lenght=100000)
-    - [ ] url (string(lenght=100000)
+    
 
 ## API definition
 - [ ] London city weather on the current date https://www.metaweather.com/api/location/44418/2013/4/27/
