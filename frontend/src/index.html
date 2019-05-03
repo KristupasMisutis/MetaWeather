@@ -1,14 +1,73 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
-
 <head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/MetaWeather-master/backend/index.js"></script>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+
+
+        body {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg/1000px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg);
+            margin-right: 150px;
+            margin-left: 150px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            background-attachment: fixed;
+        }
+       
+        
+
+        #title_image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 150px;
+        }
+    </style>
     <title>Web App</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        function reloadPage() {
+            location.reload(true);
+        }
+    </script>
 </head>
-
 <body>
     <div id="root"></div>
+    <img id="title_image" src="9u37.gif" alt="9u37" >
+    <img class="icon" style="float:right;width:125px;height:125px;; "> </p></h1>
+    <hr id="line">
+    <h1 style="font-family: Helvetica; font-size: 44px; color: rgb(255, 17, 17); padding-left: 450px"> <span class="name"></span></h1>
+    <hr id="line">  
+    <h1 style="font-family: Helvetica; font-size: 40px;  color: rgb(255, 15, 15); padding-left: 395px"><p class="temp">Temperatūra: </p></h1>
+    <hr id="line"> 
+    <h1 style="font-family: Helvetica; font-size: 35px;  color: rgb(255, 15, 15); padding-left: 400px"><p class="speed">Vėjo greitis: </p></h1>
+    <button class="patinkamygtukas" disabled style="float:right"><span class="patinka"></span></button>  
+    <button class="patinkamygtukas" style="float:right" id="patinka"">Patinka oras</button> 
+    <button class="nepatinkamygtukas" disabled style="float:right"><span class="nepatinka"></span></button>  
+    <button class="nepatinkamygtukas" style="float:right" id="nepatinka"">Nepatinka oras</button> 
+        
 </body>
-
 </html>

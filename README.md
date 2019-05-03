@@ -19,15 +19,15 @@
     - [ ] url (string(lenght=100000)
 
 ## API definition
-- [ ] London city weather on the current date https://www.metaweather.com/api/location/44418/2013/4/27/
+- [ ] Vilnius city weather on the current date https://www.metaweather.com/api/location/44418/2013/4/27/
 https://wireframe.cc/LK6uOk
 
 GET location /api/location/:id/search/?city=(city) 
 400 - {error: 'invalid location search'}
 
-GET location /api/location/:id/479616/ for London location by WOEID
+GET location /api/location/:id/479616/ for Vilnius location by WOEID
 
-POST location /api/location/:id/479616/ for London location by WOEID
+POST location /api/location/:id/479616/ for Vilnius location by WOEID
 
 405 - {error: 'Method Not Allowed'}
 
