@@ -27,7 +27,7 @@ GET location /api/location/:id/search/?city=(city)
 
 GET location /api/location/:id/479616/ for London location by WOEID
 
-POST location /api/location/:id/479616/ for London location by WOEID
+
 
 405 - {error: 'Method Not Allowed'}
 
